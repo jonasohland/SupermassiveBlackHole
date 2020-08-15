@@ -1,0 +1,22 @@
+126c126
+< #define                             kBox_UID                            "BlackHole_UID"
+---
+> #define                             kBox_UID                            "BlackHole_UID_{safe_name}"
+130,131c130,131
+< #define                             kDevice_UID                         "BlackHole_UID"
+< #define                             kDevice_ModelUID                    "BlackHole_ModelUID"
+---
+> #define                             kDevice_UID                         "BlackHole_UID_{safe_name}"
+> #define                             kDevice_ModelUID                    "BlackHole_ModelUID_{safe_name}"
+153c153
+< #define                             kDataSource_ItemNamePattern         "BlackHole %ich"
+---
+> #define                             kDataSource_ItemNamePattern         "{name} (%ich)"
+155c155
+< #define                             DEVICE_NAME                         "BlackHole %ich"
+---
+> #define                             DEVICE_NAME                         "{name} (%ich)"
+162c162
+< #define                             NUMBER_OF_CHANNELS                  16
+---
+> #define                             NUMBER_OF_CHANNELS                  {channels}

@@ -1,0 +1,8 @@
+[
+    { "name": "System Audio", "channels": 2 },
+    { "name": "Zoom Audio", "channels": 1 },
+    { "name": "AUX1", "channels": 2 },
+    { "name": "AUX2", "channels": 2 },
+    { "name": "AUX3", "channels": 1 },
+    { "name": "AUX4", "channels": 1 }
+]
