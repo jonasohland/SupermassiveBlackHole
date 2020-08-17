@@ -2,7 +2,7 @@
 
 ## What
 
-This is just a build-script written in python that will automatically build multiple versions of the [BlackHole](https://github.com/ExistentialAudio/BlackHole) Loopback driver.
+This is just a build-script written in python that will automatically build multiple versions of the [BlackHole](https://github.com/ExistentialAudio/BlackHole) Loopback driver that then can be used on the same system in parallel.
 
 ## Requirements
 
