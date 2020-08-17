@@ -34,12 +34,12 @@ def revertFile():
     shutil.copy(header_backup, blackhole_header)
 
 def patchHeader(patchfile):
-    subprocess.run(["patch", blackhole_header, patchfile]) 
+    subprocess.run(["patch", blackhole_header, patchfile])
 
 def invokeXcodeBuild():
     print("Invoke xcodebuild")
-    returned = subprocess.run(["xcodebuild", "build", 
-                    "-project", "BlackHole/BlackHole.xcodeproj", 
+    returned = subprocess.run(["xcodebuild", "build",
+                    "-project", "BlackHole/BlackHole.xcodeproj",
                     "-configuration", "Release",
                     "-quiet",
                     "CONFIGURATION_BUILD_DIR=build",
@@ -93,6 +93,7 @@ with open("devices.json") as devicesfile:
 
     print("Remove temp files")
     shutil.rmtree("temp")
+    shutil.rmtree("BlackHole/build")
     print("Restart CoreAudio")
     subprocess.run(["sudo", "launchctl", "kickstart", "-kp", "system/com.apple.audio.coreaudiod"])
     print("done")
